@@ -22,19 +22,19 @@ public class EmployeeController {
         return employeeService.getAllEmployees();
     }
     @GetMapping("/max")
-    public int showeMaxSalary(){
+    public String showeMaxSalaryEmployees(){
         return employeeService.getEmployeeMaxSalary();
     }
     @GetMapping("/sum")
-    public int showeSumSalary(){
+    public int showeSumSalaryEmployees(){
         return employeeService.getAllEmployeeSumSalary();
     }
     @GetMapping("/min")
-    public int showeMinSalary(){
+    public String showeMinSalary(){
         return employeeService.getEmployeeMinSalary();
     }
     @GetMapping("/high-salary")
-    public int showeHighSalarySalary(){
+    public List<Employee> showeHighSalarySalary(){
         return employeeService.getEmployeeHighSalarySalary();
     }
 }

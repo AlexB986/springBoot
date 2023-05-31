@@ -7,7 +7,7 @@ import java.util.List;
 public interface EmployeeService {
     List<Employee> getAllEmployees();
     int getAllEmployeeSumSalary();
-    int  getEmployeeMinSalary();
-    int  getEmployeeMaxSalary();
-    int  getEmployeeHighSalarySalary();
+    String  getEmployeeMinSalary();
+    String  getEmployeeMaxSalary();
+    List<Employee>  getEmployeeHighSalarySalary();
 }
